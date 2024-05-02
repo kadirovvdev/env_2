@@ -1,0 +1,11 @@
+<title>Footballers</title>
+
+<h1>Footballers</h1><br>
+
+
+<body>
+{% for Soccer in Soccers %}
+    <a href="{% url 'detail' soccer.pk %}" >{{ s.model }}</a><hr>
+{% endfor %}
+
+</body>
