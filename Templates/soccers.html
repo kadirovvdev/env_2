@@ -4,8 +4,8 @@
 
 
 <body>
-{% for Soccer in Soccers %}
-    <a href="{% url 'detail' soccer.pk %}" >{{ s.model }}</a><hr>
+{% for i in soccer %}
+    <a href="{% url 'detail' i.pk %}" >{{ i.number }}</a><hr>
 {% endfor %}
 
 </body>

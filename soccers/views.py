@@ -18,9 +18,9 @@ def get_soccers(request, pk):
     return render(request, 'soccers.html', context=context)
 
 def detail(request, pk):
-    soccer = Soccers.objects.get(pk=pk)
+    baller = Soccers.objects.get(pk=pk)
     context = {
-        'soccer': soccer
+        'baller': baller
     }
     print(1)
     return render(request, 'detail.html', context=context)
